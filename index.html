@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>draft</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <!-- Login Page -->
+    <div id="loginPage" class="container text-center my-5">
+      <div class="group m-auto w-75 p-5">
+        <h1>Smart Login System</h1>
+        <input
+          id="signinEmail"
+          class="form-control my-3 bg-transparent text-white"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <input
+          id="signinPassword"
+          class="form-control my-3 bg-transparent text-white"
+          type="password"
+          placeholder="Enter your password"
+        />
+        <p id="incorrect" class="text-danger d-none">All inputs is required</p>
+        <button id="loginBtn" class="btn btn-outline-info w-100 my-3">
+          Login
+        </button>
+        <p class="text-white">
+          Don't have an account? <a id="toSignup" class="text-white" href="#">Sign Up</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Signup Page -->
+    <div id="signupPage" class="container text-center my-5 d-none">
+      <div class="group m-auto w-75 p-5">
+        <h1>Smart Login System</h1>
+        <input
+          id="signupName"
+          class="form-control my-3 bg-transparent text-white"
+          type="text"
+          placeholder="Enter your name"
+        />
+        <input
+          id="signupEmail"
+          class="form-control my-3 bg-transparent text-white"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <input
+          id="signupPassword"
+          class="form-control my-3 bg-transparent text-white"
+          type="password"
+          placeholder="Enter password"
+        />
+        <p id="signupError" class="text-danger d-none"></p>
+        <p id="signupSuccess" class="text-success d-none">Success</p>
+        <button id="signupBtn" class="btn btn-outline-info w-100 my-3">
+          Sign Up
+        </button>
+        <p class="text-white">
+          You have an account? <a id="toSignin" class="text-white" href="#">Signin</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Home Page -->
+    <div id="homePage" class="d-none">
+      <nav class="navbar navbar-expand-lg navbar-dark group">
+        <div class="container">
+          <a class="navbar-brand" href="#">SMART LOGIN</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <button id="logoutBtn" class="btn btn-outline-warning">Logout</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container my-5 text-center d-flex align-items-center justify-content-center h-100">
+        <div class="group w-75 p-5 mt-5">
+          <h1 id="usernameDisplay" class="text-info">Welcome</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
